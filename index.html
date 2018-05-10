@@ -10,8 +10,74 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+	<section class="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="logo col-3 col-s-12"><img alt="awesome-logo" src="assets/logo_awesome.svg"></div>
+				<div class="navbar col-9">
+					<ul>
+						<li>
+							<a class="underline" href="#">Features</a>
+						</li>
+						<li>
+							<a class="underline" href="#">Case Studies</a>
+						</li>
+						<li>
+							<a class="underline" href="#">About</a>
+						</li>
+						<li class="contact">
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="hero-section">
+		<div class="container">
+			<div class="row">
+				<div class="hero-text col-12 col-offset-4 col-m-12 col-s-12">
+					<h2>Not to make you feel dizzy but the challenge is worth it. Aim high, have fun, <span class="hero-span">be awesome.</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="second-logo col-12 col-m-12 col-s-12">
+					<object data="assets/kolko_kwadrat.svg" type="image/svg+xml"></object>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-text col-12 col-m-12 col-s-12">
+					<p>Look carefully and notice every detail, nothing tricky though.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="socials col-12 col-m-12 col-s-12">
+						<object data="assets/fb.svg" type="image/svg+xml" class="col-4"></object><p>/ AWESOME</p>
+						<object data="assets/twitter.svg" type="image/svg+xml" class="col-4"></object><p>/ AWESOME</p>
+						<object data="assets/google+.svg" type="image/svg+xml" class="col-4"></object><p>/ AWESOME</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="bottom-square col-12 col-m-12 col-s-12">
+					<div class="square"><p>MORE</p></div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<script>
+		$('.second-logo').click(function(){
+		    $(this).css('transform', 'rotate(360deg)');
+		    $(this).css('-webkit-transform', 'rotate(360deg)');
+		    $(this).css('-moz-transform', 'rotate(360deg)');
+		});
+	</script>
 </body>
 </html>
