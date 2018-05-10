@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,600&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext");
+// font-family: 'Raleway', sans-serif; (200 / 600)
+// font-family: 'Open Sans', sans-serif;
+
+* {
+	box-sizing: border-box;
+}
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+[class*="col-"] {
+	float: left;
+	width: 100%;
+	padding: 12px;
+}
+body, p {
+	@extend .reset;
+}
+.reset {
+    margin: 0;
+    padding: 0;
+}
