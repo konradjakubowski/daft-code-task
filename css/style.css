@@ -112,6 +112,10 @@ body {
   width: 100%;
 }
 
+.hero-section {
+  padding-top: 10px;
+}
+
 .hero-section .hero-text {
   text-align: center;
   max-width: 395px;
@@ -154,6 +158,10 @@ body {
   color: #fff;
 }
 
+.footer .bottom-square {
+  margin-top: 20px;
+}
+
 .footer .square {
   width: 90px;
   height: 90px;
@@ -162,10 +170,6 @@ body {
   border-radius: 5px;
   transform: translate(0, -60px);
   transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
 }
 
 .footer .square p {
@@ -174,11 +178,40 @@ body {
 }
 
 /* MEDIA QUERIES */
-/*
-@media (min-width: 300px) and (max-width: 430px) { 
-
+@media (min-width: 300px) and (max-width: 430px) {
+  .navigation .logo {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .navigation .logo img {
+    width: 40%;
+  }
+  .navbar {
+    display: none;
+  }
+  .hero-section .hero-text {
+    margin: 0;
+    font-size: 13px;
+    padding: 0 22px;
+    color: #fff;
+  }
+  .hero-section .second-logo object {
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+    padding-top: 2px;
+  }
+  .footer {
+    padding: 15px 0;
+  }
+  .footer .footer-text p {
+    font-size: 12px;
+    padding: 0 20px;
+    font-weight: bold;
+  }
 }
 
+/*
 @media (min-width: 431px) and (max-width: 767px) { 
 
 }
