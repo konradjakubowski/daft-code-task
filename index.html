@@ -16,7 +16,9 @@
 	<section class="navigation">
 		<div class="container">
 			<div class="row">
-				<div class="logo col-3 col-s-12"><img alt="awesome-logo" src="assets/logo_awesome.svg"></div>
+				<div class="logo col-3 col-s-12">
+					<img alt="awesome-logo" src="assets/logo_awesome.svg">
+				</div>
 				<div class="navbar col-9">
 					<ul>
 						<li>
@@ -39,7 +41,7 @@
 	<section class="hero-section">
 		<div class="container">
 			<div class="row">
-				<div class="hero-text col-12 col-offset-4 col-m-12 col-s-12">
+				<div class="hero-text col-4 col-offset-4 col-s-12">
 					<h2>Not to make you feel dizzy but the challenge is worth it. Aim high, have fun, <span class="hero-span">be awesome.</span></h2>
 				</div>
 			</div>
@@ -58,25 +60,37 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="socials col-12 col-m-12 col-s-12">
-						<object data="assets/fb.svg" type="image/svg+xml" class="col-4"></object><p>/ AWESOME</p>
-						<object data="assets/twitter.svg" type="image/svg+xml" class="col-4"></object><p>/ AWESOME</p>
-						<object data="assets/google+.svg" type="image/svg+xml" class="col-4"></object><p>/ AWESOME</p>
+				<div class="socials col-12 col-offset-3">
+					<div class="col-2 col-s-12">
+						<object data="assets/fb.svg" type="image/svg+xml"></object>
+						<p>/&nbsp; AWESOME</p>
+					</div>
+					<div class="col-2 col-s-12">
+						<object data="assets/twitter.svg" type="image/svg+xml"></object>
+						<p>/&nbsp; AWESOME</p>
+					</div>
+					<div class="col-2 col-s-12">
+						<object data="assets/google+.svg" type="image/svg+xml"></object>
+						<p>/&nbsp; AWESOME</p>
+					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="bottom-square col-12 col-m-12 col-s-12">
-					<div class="square"><p>MORE</p></div>
-				</div>
+				<a href="#">
+					<div class="triangle">
+						<p class="more-mobile">MORE</p>
+						<p class="plus-mobile">+</p>
+					</div>
+				</a>
 			</div>
 		</div>
 	</section>
 
 	<script>
-		$('.second-logo').click(function(){
-		    $(this).css('transform', 'rotate(360deg)');
-		    $(this).css('-webkit-transform', 'rotate(360deg)');
-		    $(this).css('-moz-transform', 'rotate(360deg)');
+		$(function() {
+    		$('.logo').on("click", function() {
+			 	$(this).addClass("rotate");
+			});
 		});
 	</script>
 </body>
