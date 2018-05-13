@@ -36,12 +36,16 @@ body {
   padding: 0;
 }
 
-.logo {
+.navigation .logo {
   padding: 40px 0;
 }
 
-.logo img {
+.navigation .logo img {
   width: 60%;
+}
+
+.navigation .hamburger {
+  display: none;
 }
 
 .navbar ul {
@@ -203,7 +207,13 @@ body {
     text-align: center;
   }
   .navigation .logo img {
-    width: 35%;
+    width: 41%;
+    margin-left: 23%;
+  }
+  .navigation .hamburger {
+    display: block;
+    width: 9%;
+    padding-top: 28px;
   }
   .navbar {
     display: none;
