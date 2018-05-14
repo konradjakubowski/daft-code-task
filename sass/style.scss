@@ -44,6 +44,9 @@ body {
 .navigation .hamburger {
 	display: none;
 }
+.navbar .contact:hover a {
+	color: #000;
+}
 .navbar {
 	ul {
 		@extend .reset;
@@ -72,12 +75,6 @@ body {
 			background-color: white;
 			cursor: pointer;
 			transition: .5s;
-		}
-		a {
-			&:hover {
-				color: #000;
-				transition: .5s;
-			}
 		}
 	}
 	.underline {
@@ -121,11 +118,20 @@ body {
 		color: $white;
 		font-weight: bold;
 	}
+	.second-logo {
+		padding-top: 11%;
+	}
 	.second-logo object {
 		margin: 0 auto;
 		display: block;
-		width: 7%;
+		width: 78%;
 		padding-top: 12%;
+	}
+	.wrapper {
+		width: 100px;
+		height: 100px;
+		border: 1px solid #fff;
+		margin: 0 auto;
 	}
 }
 

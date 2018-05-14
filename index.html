@@ -50,7 +50,9 @@
 			</div>
 			<div class="row">
 				<div class="second-logo col-12 col-m-12 col-s-12">
-					<object data="assets/kolko_kwadrat.svg" type="image/svg+xml"></object>
+					<div class="wrapper">
+						<object data="assets/kolko_kwadrat.svg" type="image/svg+xml"></object>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -91,7 +93,7 @@
 
 	<script type="text/javascript">
 		$(function() {
-    		$('.logo').on("click", function() {
+    		$('.wrapper').on("click", function() {
 			 	$(this).addClass("rotate");
 			});
 		});
