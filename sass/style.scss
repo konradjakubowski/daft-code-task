@@ -121,17 +121,18 @@ body {
 	.second-logo {
 		padding-top: 11%;
 	}
-	.second-logo object {
-		margin: 0 auto;
-		display: block;
-		width: 78%;
-		padding-top: 12%;
-	}
 	.wrapper {
-		width: 100px;
-		height: 100px;
-		border: 1px solid #fff;
-		margin: 0 auto;
+		height: 110px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	#svg-logo {
+		transition: all 2s;
+		height: 70%;
 	}
 }
 
@@ -141,10 +142,12 @@ body {
 	.footer-text p {
 		color: $white;
 		text-align: center;
+		margin-bottom: 5px;
 	}
 	.socials {
 		display: inline;
 		padding-top: 15px;
+		margin-left: 31%;
 	}
 	.socials object {
 		width: 12%;
@@ -156,6 +159,9 @@ body {
 		transform: translate(40px,-25px);
 		margin: 0;
 	}
+	.fb-social {
+		transform: translate(0,-3px);
+	}
 	.triangle {
 		position: absolute;
 	    left: 0;
@@ -166,8 +172,8 @@ body {
 	    width: 60px;
 	    height: 30px;
 	    border-bottom: solid 55px #fff;
-	    border-left: solid 60px transparent;
-	    border-right: solid 60px transparent;
+	    border-left: solid 55px transparent;
+	    border-right: solid 55px transparent;
 	}
 	.triangle .more-mobile {
 		font-size: 14px;
@@ -182,16 +188,6 @@ body {
 	}
 }
 
-
-
-
-
-
-
-
-.rotate {
-		transform: rotate(-360deg);
-	}
 /* MEDIA QUERIES */
 @media (min-width: 300px) and (max-width: 430px) { 
 		.navigation .logo {
@@ -222,24 +218,25 @@ body {
 		.hero-section .col-offset-4 {
 			margin: 0;
 		}
-		.hero-section .second-logo object {
-			margin: 0 auto;
-			display: block;
-			width: 20%;
-			padding-top: 25px;
+		.hero-section .second-logo {
+			padding-top: 0;
+		}
+		.hero-section #svg-logo {
+			height: 60%;
 		}
 		.footer {
-			padding-top: 5%;
+			padding-top: 0;
 		}
 		.footer .footer-text p {
 			font-size: 10px;
 			padding: 0 55px;
+			margin: 0;
 			font-weight: bold;
-			line-height: 22px;
+			line-height: 18px;
 		}
 		.footer .socials {
 			display: block;
-			padding: 15px 0 48px 0;
+			padding: 37px 0 48px 0;
 			margin-left: 34%;	
 		}
 		.footer .socials object {
@@ -264,10 +261,6 @@ body {
 			margin: 6px -4px;
 		}
 }
-
-
-
-
 
 
 /*

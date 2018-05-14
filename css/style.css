@@ -137,18 +137,20 @@ body {
   padding-top: 11%;
 }
 
-.hero-section .second-logo object {
-  margin: 0 auto;
-  display: block;
-  width: 78%;
-  padding-top: 12%;
+.hero-section .wrapper {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-section .wrapper {
-  width: 100px;
-  height: 100px;
-  border: 1px solid #fff;
-  margin: 0 auto;
+.hero-section .wrapper:hover {
+  cursor: pointer;
+}
+
+.hero-section #svg-logo {
+  transition: all 2s;
+  height: 70%;
 }
 
 .footer {
@@ -159,11 +161,13 @@ body {
 .footer .footer-text p {
   color: #fff;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .footer .socials {
   display: inline;
   padding-top: 15px;
+  margin-left: 31%;
 }
 
 .footer .socials object {
@@ -178,6 +182,10 @@ body {
   margin: 0;
 }
 
+.footer .fb-social {
+  transform: translate(0, -3px);
+}
+
 .footer .triangle {
   position: absolute;
   left: 0;
@@ -188,8 +196,8 @@ body {
   width: 60px;
   height: 30px;
   border-bottom: solid 55px #fff;
-  border-left: solid 60px transparent;
-  border-right: solid 60px transparent;
+  border-left: solid 55px transparent;
+  border-right: solid 55px transparent;
 }
 
 .footer .triangle .more-mobile {
@@ -204,10 +212,6 @@ body {
 
 .footer a {
   color: #000;
-}
-
-.rotate {
-  transform: rotate(-360deg);
 }
 
 /* MEDIA QUERIES */
@@ -240,24 +244,25 @@ body {
   .hero-section .col-offset-4 {
     margin: 0;
   }
-  .hero-section .second-logo object {
-    margin: 0 auto;
-    display: block;
-    width: 20%;
-    padding-top: 25px;
+  .hero-section .second-logo {
+    padding-top: 0;
+  }
+  .hero-section #svg-logo {
+    height: 60%;
   }
   .footer {
-    padding-top: 5%;
+    padding-top: 0;
   }
   .footer .footer-text p {
     font-size: 10px;
     padding: 0 55px;
+    margin: 0;
     font-weight: bold;
-    line-height: 22px;
+    line-height: 18px;
   }
   .footer .socials {
     display: block;
-    padding: 15px 0 48px 0;
+    padding: 37px 0 48px 0;
     margin-left: 34%;
   }
   .footer .socials object {
