@@ -11,11 +11,11 @@ $(function() {
 	});
 
 	$('#js-burger-nav').on("click", function() {
-		$('.mobile-socials').css({display: "inline-block", margin: "26px 0 0 12px"});
+		$('.mobile-socials').css({"display":"inline-block", "margin":"26px 0 0 0", "padding-left":"21px"});
 	});
 	
-	$('#js-burger-nav').on("click", function() {
-		$('.close-wrapper').css({display: "block"});
-	});
+	$('.burger-wrapper').click( function() {
+       $('.close-wrapper').toggle();
+    });
 
 });
