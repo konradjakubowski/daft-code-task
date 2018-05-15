@@ -4,10 +4,7 @@ $(function() {
 		$(this).css('transform', 'rotate('+ (i * 360) + 'deg)');
 		i++;
 	});
-});
-
-$(function() {
-	$('.burger-nav').on("click", function() {
-		$('.top-wrapper').toggleClass("open");
+	$('#js-burger-nav').on("click", function() {
+		$('.top-wrapper, .js-dropdown').toggleClass("open");
 	});
 });
