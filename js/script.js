@@ -12,9 +12,9 @@ $(function() {
 	$('#js-close-nav').on("click", function() {
 		$('.top-wrapper, .js-dropdown').toggleClass("open");
 	});
-	/*
-	$("#js-close-nav").click(function () {
-    	$(".burger-wrapper").hide();
-	});*/
+	
+	$('#js-burger-nav').on("click", function() {
+		$('.close-wrapper').toggle();
+	});
 
 });
