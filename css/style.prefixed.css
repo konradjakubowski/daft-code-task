@@ -50,7 +50,8 @@ body {
 
 .navigation .burger-nav,
 .burger-wrapper,
-.close-wrapper {
+.close-wrapper,
+.mobile-socials {
   display: none;
 }
 
@@ -221,9 +222,6 @@ body {
 
 /* MEDIA QUERIES */
 @media (min-width: 300px) and (max-width: 430px) {
-  .navigation {
-    padding-bottom: 12%;
-  }
   .navigation .logo {
     padding: 30px 0;
     text-align: center;
@@ -257,7 +255,7 @@ body {
   }
   .navigation .close-wrapper img {
     margin: -27px 10px 18px 22px;
-    transform: translate(-17px, 0);
+    transform: translate(-55px, 0);
   }
   .navigation .burger-nav {
     display: block;
@@ -283,6 +281,9 @@ body {
   }
   .navigation .navbar ul li a {
     display: block;
+  }
+  .navigation .mobile-socials {
+    display: none;
   }
   .hero-section {
     padding-top: 0;

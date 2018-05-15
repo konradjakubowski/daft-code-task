@@ -10,11 +10,15 @@ $(function() {
 	});
 
 	$('#js-close-nav').on("click", function() {
-		$('.top-wrapper, .js-dropdown').toggleClass("open");
+		$('.top-wrapper', '.js-dropdown').toggleClass("open");
+	});
+
+	$('#js-burger-nav').on("click", function() {
+		$('.mobile-socials').css({display: "inline-block", margin: "26px 0 0 12px"});
 	});
 	
 	$('#js-burger-nav').on("click", function() {
-		$('.close-wrapper').toggle();
+		$('.close-wrapper').css({display: "block"});
 	});
 
 });
