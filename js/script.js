@@ -13,7 +13,6 @@ $(function() {
 		$('.mobile-socials').css({"display":"inline-block", "margin":"26px 0 0 0", "padding-left":"21px"});
 	});
 	
-	// ikonki 
 	$('.burger-wrapper').click( function() {
        $('.close-wrapper').toggle();
         $('.burger-wrapper').toggle();
@@ -25,6 +24,4 @@ $(function() {
         $('.close-wrapper').toggle();
         $('.mobile-socials').toggle();
     });
-
 });
-
