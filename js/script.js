@@ -29,4 +29,11 @@ $(function() {
        $('.close-wrapper').toggle();
     });
 
+    $('.close-wrapper').click( function() {
+       $('.burger-wrapper').show();
+    });
+
 });
+
+
+
