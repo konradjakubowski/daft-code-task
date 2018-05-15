@@ -175,9 +175,10 @@ body {
 }
 
 .footer .socials {
-  display: inline;
+  display: inline-block;
   padding-top: 15px;
-  margin-left: 31%;
+  text-align: center;
+  transform: translate(35%, 0);
 }
 
 .footer .socials object {
@@ -315,11 +316,11 @@ body {
   }
   .footer .socials {
     display: block;
-    padding: 37px 0 48px 0;
-    margin-left: 34%;
+    padding: 37px 0 48px 64px;
+    transform: translate(0, 0);
   }
   .footer .socials object {
-    width: 6%;
+    width: 8%;
   }
   .footer .socials p {
     font-size: 12px;

@@ -5,13 +5,11 @@ $(function() {
 		i++;
 	});
 
-	$('#js-burger-nav').on("click", function() {
+	$('#js-burger-nav, #js-close-nav').on("click", function() {
 		$('.top-wrapper, .js-dropdown').toggleClass("open");
+		//$('#js-burger-nav, #js-close-nav').toggle();
 	});
 
-	$('#js-close-nav').on("click", function() {
-		$('.top-wrapper', '.js-dropdown').toggleClass("open");
-	});
 
 	$('#js-burger-nav').on("click", function() {
 		$('.mobile-socials').css({display: "inline-block", margin: "26px 0 0 12px"});
