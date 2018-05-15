@@ -10,7 +10,6 @@ $(function() {
 		//$('#js-burger-nav, #js-close-nav').toggle();
 	});
 
-
 	$('#js-burger-nav').on("click", function() {
 		$('.mobile-socials').css({display: "inline-block", margin: "26px 0 0 12px"});
 	});
