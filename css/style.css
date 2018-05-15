@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background: url("https://image.ibb.co/jjsJVd/bg_image_filtered.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+body {
+  position: relative;
+}
+
 .row:before, .row:after {
   content: "";
   display: table;
@@ -16,17 +27,6 @@
 [class*="col-"] {
   float: left;
   width: 100%;
-}
-
-body {
-  background: url("https://image.ibb.co/jjsJVd/bg_image_filtered.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-
-body {
-  position: relative;
 }
 
 .container {
@@ -48,11 +48,9 @@ body {
   width: 60%;
 }
 
-.navigation .burger-nav {
-  display: none;
-}
-
-.navigation .burger-wrapper {
+.navigation .burger-nav,
+.burger-wrapper,
+.close-wrapper {
   display: none;
 }
 
@@ -244,6 +242,10 @@ body {
   }
   .navigation .burger-wrapper img {
     margin: 24px 22px 0 0;
+  }
+  .navigation .close-wrapper img {
+    margin: -27px 10px 18px 22px;
+    transform: translate(-17px, 0);
   }
   .navigation .burger-nav {
     display: block;
