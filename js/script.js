@@ -5,3 +5,9 @@ $(function() {
 		i++;
 	});
 });
+
+$(function() {
+	$('.burger-nav').on("click", function() {
+		$('.top-wrapper').toggleClass("open");
+	});
+});

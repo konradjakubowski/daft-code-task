@@ -25,6 +25,10 @@ body {
   background-size: cover;
 }
 
+body {
+  position: relative;
+}
+
 .container {
   width: 100%;
   margin: auto;
@@ -44,7 +48,11 @@ body {
   width: 60%;
 }
 
-.navigation .hamburger {
+.navigation .burger-nav {
+  display: none;
+}
+
+.navigation .burger-wrapper {
   display: none;
 }
 
@@ -55,7 +63,7 @@ body {
 .navbar ul {
   list-style-type: none;
   float: right;
-  padding: 32px 0;
+  padding: 38px 0;
 }
 
 .navbar li {
@@ -147,13 +155,13 @@ body {
       align-items: center;
 }
 
-.hero-section .wrapper:hover {
-  cursor: pointer;
-}
-
 .hero-section #svg-logo {
   transition: all 2s;
   height: 70%;
+}
+
+.hero-section #svg-logo:hover {
+  cursor: pointer;
 }
 
 .footer {
@@ -181,36 +189,32 @@ body {
 .footer .socials p {
   color: #fff;
   font-size: 14px;
-  transform: translate(40px, -25px);
   margin: 0;
-}
-
-.footer .fb-social {
-  transform: translate(0, -3px);
+  padding-left: 15px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .footer .triangle {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
   margin: 0 auto;
   vertical-align: middle;
   width: 60px;
-  height: 30px;
   border-bottom: solid 55px #fff;
   border-left: solid 55px transparent;
   border-right: solid 55px transparent;
 }
 
-.footer .triangle .more-mobile {
-  font-size: 14px;
-  padding-top: 12px;
-  margin-left: -20px;
-}
-
 .footer .triangle .plus-mobile {
   display: none;
+}
+
+.footer .triangle p:first-child {
+  margin-top: 40px;
+  font-size: 14px;
+  transform: translate(-21px, 58px);
 }
 
 .footer a {
@@ -227,13 +231,44 @@ body {
     width: 41%;
     margin-left: 23%;
   }
-  .navigation .hamburger {
-    display: block;
-    width: 9%;
-    padding-top: 28px;
+  .navigation .top-wrapper {
+    width: 100%;
+    padding: 0;
+    height: 0;
   }
-  .navbar {
-    display: none;
+  .navigation .top-wrapper.open {
+    width: 100%;
+    padding: 0;
+    background-color: #001820;
+    height: 540px;
+  }
+  .navigation .burger-wrapper {
+    display: block;
+  }
+  .navigation .burger-nav {
+    display: block;
+    width: 54%;
+    padding-top: 30px;
+    cursor: pointer;
+  }
+  .navigation .navbar ul {
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+  }
+  .navigation .navbar ul.open {
+    height: auto;
+  }
+  .navigation .navbar ul li {
+    float: none;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  .navigation .navbar ul li a {
+    display: block;
+    padding: 20px 10px;
+    margin: 0;
   }
   .hero-section {
     padding-top: 0;
@@ -251,7 +286,7 @@ body {
     padding-top: 0;
   }
   .hero-section #svg-logo {
-    height: 60%;
+    height: 53%;
   }
   .footer {
     padding-top: 0;
@@ -269,12 +304,12 @@ body {
     margin-left: 34%;
   }
   .footer .socials object {
-    width: 5%;
+    width: 6%;
   }
   .footer .socials p {
     font-size: 12px;
-    transform: translate(29px, -20px);
-    margin: 0;
+    padding: 11px 12px;
+    transform: translate(0px, -10px);
   }
   .footer .triangle {
     bottom: 0px;
@@ -287,7 +322,7 @@ body {
   }
   .footer .triangle .plus-mobile {
     display: block;
-    margin: 6px -4px;
+    transform: translate(-4px, 43px);
   }
 }
 
