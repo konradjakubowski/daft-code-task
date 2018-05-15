@@ -1,14 +1,3 @@
-/*var burger = document.getElementById('js-burger-nav');
-var close = document.getElementById('js-close-nav');
-
-burger.addEventListener("click", function() { 
-	close.style.display = "block";
-});
-
-/*close.addEventListener("click", function() { 
-	burger.style.display = "none";
-});*/
-
 $(function() {
 	var i = 1;
 	$('#svg-logo').on("click", function() {
@@ -27,13 +16,15 @@ $(function() {
 	// ikonki 
 	$('.burger-wrapper').click( function() {
        $('.close-wrapper').toggle();
+        $('.burger-wrapper').toggle();
+        $('.close-wrapper').css({"transform": "translateY(50px)"});
     });
 
     $('.close-wrapper').click( function() {
-       $('.burger-wrapper').show();
+       $('.burger-wrapper').toggle();
+        $('.close-wrapper').toggle();
+        $('.mobile-socials').toggle();
     });
 
 });
-
-
 
