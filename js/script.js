@@ -14,14 +14,14 @@ $(function() {
 	});
 	
 	$('.burger-wrapper').click( function() {
-       $('.close-wrapper').toggle();
-        $('.burger-wrapper').toggle();
-        $('.close-wrapper').css({"transform": "translateY(50px)"});
-    });
+       		$('.close-wrapper').toggle();
+        	$('.burger-wrapper').toggle();
+        	$('.close-wrapper').css({"transform": "translateY(50px)"});
+    	});
 
-    $('.close-wrapper').click( function() {
-       $('.burger-wrapper').toggle();
-        $('.close-wrapper').toggle();
-        $('.mobile-socials').toggle();
-    });
+    	$('.close-wrapper').click( function() {
+       		$('.burger-wrapper').toggle();
+        	$('.close-wrapper').toggle();
+        	$('.mobile-socials').toggle();
+    	});
 });
